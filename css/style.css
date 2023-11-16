@@ -1,0 +1,21 @@
+.title {
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: var(--primary-color);
+	color: var(--font-color);
+	width: 100%;
+	text-align: center;
+}
+
+.main-buttons {
+	position: absolute;
+	top: 8%;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: var(--secondary-color);
+	cursor: pointer;
+	color: var(--font-color);
+	width: 100%;
+	text-align: center;
+}

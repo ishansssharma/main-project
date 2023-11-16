@@ -1,0 +1,18 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: 'Anek Devanagari', sans-serif;
+
+}
+
+
+
+body {
+	display: flex;
+}
+
+button {
+	background: transparent;
+	border: none;
+}
