@@ -19,27 +19,34 @@
 <body>
 	<h1 class="title">Tatovert på innsiden</h1>
 	<section class="main-buttons">
-		<button class="main-button" data-button="Ishan-Sharma">Ishan Sharma</button>
-		<button class="main-button" data-button="Chapters-and-Concept">Chapters and Concept</button>
-		<button class="main-button" data-button="Contact">Contact</button>
+		<button class="main-button main-button__active first-button" data-button="Ishan-Sharma">Ishan Sharma</button>
+		<button class="main-button main-button__active second-button" data-button="Chapters-and-Concept">Chapters and
+			Concept</button>
+		<button class="main-button main-button__active third-button" data-button="Contact">Contact</button>
 	</section>
 
 
 	<main>
-		<div class="content" data-name="Ishan-Sharma">
+		<div class="main-site">
 			<div class="main-container">
 				<div class="mini-title">En liten gutt kastet ut i en stor verden</div>
 				<div class="text-container">«Tatovert på Innsiden» er en novellesamling som tar med leseren på en
 					personlig
 					reise gjennom følelsesladde historier.
-					En kort og presis bok med søkelys på enkeltmennesket og dets forskjellige nyanser.</div>
+					En kort og presis bok med søkelys på enkeltmennesket og dets forskjellige nyanser.
+				</div>
 			</div>
 
 			<div>
 				<div class="image-container">
-					<img src="Images/Frontpicture.jpg" alt="">
+					<img class="image-image" src="Images/Frontpicture.jpg" alt="">
 				</div>
 			</div>
+		</div>
+
+		<div class="content" data-name="Ishan-Sharma">
+
+
 		</div>
 
 		<div class="content" data-name="Chapters-and-Concept">
@@ -59,7 +66,7 @@
 
 
 
-	<script src="app.js"></script>
+	<script src="app.js" defer></script>
 </body>
 
 </html>
