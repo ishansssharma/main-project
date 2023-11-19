@@ -1,0 +1,20 @@
+.info-box {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	width: 60rem;
+	height: 40rem;
+	border: 0.2rem solid black;
+}
+
+.info-box__picture {
+	flex-basis: 50%;
+	background-color: blue;
+}
+
+.info-box__info {
+	flex-basis: 50%;
+	background-color: red;
+}
