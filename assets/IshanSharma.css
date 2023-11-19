@@ -18,3 +18,19 @@
 	flex-basis: 50%;
 	background-color: red;
 }
+
+.container-info {
+	display: flex;
+}
+
+.p1 {
+	flex-basis: 40%;
+}
+
+.p2 {
+	flex-basis: 20%;
+}
+
+.p3 {
+	flex-basis: 40%;
+}
