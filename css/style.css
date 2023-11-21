@@ -10,7 +10,7 @@
 
 .main-buttons {
 	position: absolute;
-	top: 8%;
+	top: 6%;
 	left: 50%;
 	transform: translateX(-50%);
 	background-color: var(--secondary-color);
@@ -18,4 +18,32 @@
 	color: var(--font-color);
 	width: 100%;
 	text-align: center;
+
+
+}
+
+.main-button {
+	color: var(--font-color);
+	font-size: var(--font-size__small);
+
+}
+
+.home-button {
+	margin-right: 1rem;
+}
+
+.first-button {
+	margin-right: 1rem;
+}
+
+.third-button {
+	margin-left: 1rem;
+}
+
+.content {
+	display: none;
+}
+
+.content--visible {
+	display: flex;
 }

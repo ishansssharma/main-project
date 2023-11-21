@@ -12,17 +12,29 @@
 
 .mini-title {
 	flex-basis: 10%;
-	font-size: 1.5rem;
+	font-size: var(--font-size__medium);
 	text-align: center;
 }
 
 .text-container {
 	flex-basis: 80%;
-	font-size: 1rem;
+	font-size: var(--font-size__small);
 	text-align: center;
 }
 
 .image-container {
 	position: absolute;
-	top: 50%;
+	top: 40%;
+	left: 50%;
+	transform: translatex(-50%);
+	width: 50rem;
+	height: 30rem;
+
+}
+
+.image-image {
+	width: 50rem;
+	height: 30rem;
+	border-radius: 1rem;
+
 }

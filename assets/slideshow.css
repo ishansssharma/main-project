@@ -1,0 +1,29 @@
+.slideshow {
+	position: absolute;
+	width: 50rem;
+	height: 30rem;
+	top: 120%;
+	left: 50%;
+	transform: translatex(-50%);
+	background-color: var(--primary-color);
+
+
+}
+
+.slideshow-slides {
+	background-color: blueviolet;
+	height: 30rem;
+}
+
+.slideshow__slide {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0%;
+	left: 0%;
+	display: none;
+}
+
+.slideshow__slide--visible {
+	display: block;
+}
