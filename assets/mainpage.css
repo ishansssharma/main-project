@@ -35,6 +35,6 @@
 .image-image {
 	width: 50rem;
 	height: 30rem;
-	border-radius: 1rem;
+	border-radius: var(--border-radius);
 
 }

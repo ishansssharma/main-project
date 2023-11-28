@@ -15,18 +15,25 @@
 	<link rel="stylesheet" href="assets/IshanSharma.css">
 	<link rel="stylesheet" href="assets/contact.css">
 	<link rel="stylesheet" href="assets/slideshow.css">
+	<link rel="stylesheet" href="assets/purpose.css">
+	<link rel="stylesheet" href="assets/footer.css">
+	<link rel="stylesheet" href="assets/chapters.css">
 
 
 </head>
 
 <body>
-	<h1 class="title">Tatovert på innsiden</h1>
-	<section class="main-buttons">
-		<button class="main-button main-button__active home-button" data-button="Home">Home</button>
-		<button class="main-button main-button__active first-button" data-button="Ishan-Sharma">Ishan Sharma</button>
-		<button class="main-button main-button__active second-button" data-button="Chapters-and-Concept">Chapters and
-			Concept</button>
-		<button class="main-button main-button__active third-button" data-button="Contact">Contact</button>
+	<section class="top-container">
+		<h1 class="title">Tatovert på innsiden</h1>
+		<div class="main-buttons">
+			<button class="main-button main-button__active home-button" data-button="Home">Home</button>
+			<button class="main-button main-button__active 	first-button" data-button="Ishan-Sharma">Ishan
+				Sharma</button>
+			<button class="main-button main-button__active second-button" data-button="Chapters-and-Concept">Chapters
+				and
+				Concept</button>
+			<button class="main-button main-button__active third-button" data-button="Contact">Contact</button>
+		</div>
 	</section>
 
 
@@ -49,28 +56,118 @@
 
 			<section class="slideshow">
 				<div class="slideshow-slides">
-					<figure>
-						<img class="slideshow-slide" src="slideshowimages/tatovert på innsiden.webp" alt="">
+
+					<figure class="slideshow-slide slideshow-slide--visible">
+						<img class="slideshow-img" src="slideshowimages/tatovert på innsiden.webp" alt="">
 						<figcaption></figcaption>
+						<div class="quotecontainer">
+							<div class="quote">Tatoveringer på utsiden er kjedelig. Finn tatoveringene på innsiden.
+
+							</div>
+						</div>
 					</figure>
-					<figure>
-						<img class="slideshow-slide" src="slideshowimages/booksideangle.jpg" alt="">
+
+					<figure class="slideshow-slide slideshow-slide--visible">
+						<img class="slideshow-img" src="slideshowimages/booksideangle.jpg" alt="">
 						<figcaption></figcaption>
+						<div class="quotecontainer">
+							<div class="quote">Det er frustrerende og måtte forklare seg selv til hjernedøde mennesker
+								som kun har sett gatene i Oslo og stranda på Kreta. Jeg skriver om så mye større enn
+								dette.
+
+							</div>
+						</div>
 					</figure>
-					<figure>
-						<img class="slideshow-slide" src="slideshowimages/book.jpg" alt="">
+
+					<figure class="slideshow-slide slideshow-slide--visible">
+						<img class="slideshow-img" src="slideshowimages/book.jpg" alt="">
 						<figcaption></figcaption>
+						<div class="quotecontainer">
+							<div class="quote">Samfunnets sannheter kan såre. For i Norge er det slik at man blir
+								behandlet ulikt basert på utseende. Ja, mindre nå enn før. Likevel så er denne
+								tilnærmingen gravert inn i bakhodene på mennesker. Det sårer. Spesielt for en gutt som
+								hadde muligheten til å vokse opp fritt for alle normer og regler. </div>
+						</div>
 					</figure>
-					<figure>
-						<img class="slideshow-slide" src="slideshowimages/IMG_6049.jpeg" alt="">
+
+					<figure class="slideshow-slide slideshow-slide--visible">
+						<img class="slideshow-img" src="slideshowimages/IMG_6049.jpeg" alt="">
 						<figcaption></figcaption>
+						<div class="quotecontainer">
+							<div class="quote">Det har seg slik at jeg kan ha en tendens til å overtenke andre
+								menneskers klesstiler. Jeg setter mye tid og energi i hvordan jeg fremstiller meg og
+								forventer dermed at menneskene rundt meg skal gjøre det samme. Det stemmer ikke. </div>
+						</div>
 					</figure>
-					<figure>
-						<img class="slideshow-slide" src="slideshowimages/IMG_7106.jpeg" alt="">
+
+					<figure class="slideshow-slide slideshow-slide--visible">
+						<img class="slideshow-img" src="slideshowimages/IMG_7106.jpeg" alt="">
 						<figcaption></figcaption>
+						<div class="quotecontainer">
+							<div class="quote">Ja vi valgte å forplikte, vel vitende at forpliktelse ikke var noe hodet
+								vårt hadde forpliktet seg til.
+
+							</div>
+						</div>
 					</figure>
 
 				</div>
+
+				<div class="slideshow__controls">
+					<button class="slideshow__control-button previous" data-direction="previous">
+						<img src="slideshowimages/Slideshow__button-previous.png" alt="">
+					</button>
+					<button class="slideshow__control-button next" data-direction="next">
+						<img src="slideshowimages/Slideshow__button-next.png" alt="">
+					</button>
+				</div>
+
+
+				<div class="slideshow__dots">
+					<button class="slideshow__dot" data-index="0"></button>
+					<button class="slideshow__dot" data-index="0"></button>
+					<button class="slideshow__dot" data-index="0"></button>
+					<button class="slideshow__dot" data-index="0"></button>
+					<button class="slideshow__dot" data-index="0"></button>
+				</div>
+
+				<div class="slideshow__counter">
+					1 av 5
+				</div>
+
+
+
+
+			</section>
+
+			<section class="purposecontainer">
+				<div class="purpose__img">
+					<figure>
+						<img class="purpose__img--img" src="Images/IMG_9423.jpeg" alt="">
+					</figure>
+				</div>
+				<div class="purpose__text">
+					<h2 class="purpose__text--title">Formålet</h2>
+					<div class="purpose__text--text">Det er mangel på bøker som sikter etter ungdom som stiller
+						spørsmål til utseende, seksualitet
+						og rase. Denne novellesamlingen sikter etter slike spørsmålstegn. Den skal opplyse, inspirere og
+						viktigst av alt normalisere livssituasjoner som skiller seg fra andre.
+						«Hookup-culture», tidlig eksponering til sex, rasediskriminering osv., er noe få av temaene som
+						blir diskutert her.
+						Homofile, brune gutter og jenter vokser opp uten noe informasjon eller veiledning til hvordan de
+						skal forholde seg til seksualiteten sin. Dette leder ofte til tidlig eksponering (ofte med
+						eldre), rusmisbruk og usikkerhet.
+						Denne boken hevder ikke å være løsningen på dette, men heller en lettelse til ungdommer som
+						føler seg alene i spørsmålsinfernoet.
+
+						<button>
+
+						</button>
+
+					</div>
+
+				</div>
+
 
 			</section>
 		</div>
@@ -119,32 +216,118 @@
 		</div>
 
 		<div class="content" data-name="Chapters-and-Concept">
+			<aside>
+				<div class="feeling__container">
+					<div>Følelse</div>
+					<button class="filter-button" data-filter-via="feeling" data-filter="kjærlighet">Kjærlighet</button>
+					<button class="filter-button" data-filter-via="feeling"
+						data-filter="hookup">«Hookup-culture»</button>
+					<button class="filter-button" data-filter-via="feeling" data-filter="rasisme">Rase og
+						rasisme</button>
+					<button class="filter-button" data-filter-via="feeling"
+						data-filter="selvutvikling">selvutvikling</button>
+				</div>
+
+				<div class="size__container">
+					<div>Lengde</div>
+					<button class="filter-button" data-filter-via="size" data-filter="long">1+</button>
+					<button class="filter-button" data-filter-via="size" data-filter="short">1-</button>
+
+				</div>
+
+			</aside>
+
+			<section>
+				<div class="headers">
+					<div class="header" data-feeling="selvutvikling" data-size="short">"Til deg"</div>
+					<div class="header" data-feeling="kjærlighet" data-size="long">"Hun mot Han"</div>
+					<div class="header" data-feeling="hookup" data-size="short">
+						"Stikk på selvrespekten"
+					</div>
+					<div class="header" data-feeling="rasisme" data-size="short">"Spiralen av rase"</div>
+					<div class="header" data-feeling="selvutvikling" data-size="long">"Tatoveringssjappen"</div>
+					<div class="header" data-feeling="selvutvikling" data-size="short">"20. årene?"</div>
+					<div class="header" data-feeling="hookup" data-size="short">
+						"Snorkelyd"
+					</div>
+					<div class="header" data-feeling="rasisme" data-size="short">"Barndommen vi alle savner"</div>
+					<div class="header" data-feeling="kjærlighet" data-size="short">"Den brune åkeren og det blå havet"
+					</div>
+					<div class="header" data-feeling="hookup" data-size="short">
+						«Hook up Culture»
+					</div>
+					<div class="header" data-feeling="selvutvikling" data-size="long">"Urovekkende preferanser"</div>
+					<div class="header" data-feeling="kjærlighet" data-size="long">"Frosken og prinsen"
+					</div>
+					<div class="header" data-feeling="rasisme" data-size="short">"Spiralen av rase"</div>
+					<div class="header" data-feeling="hookup kjærlighet" data-size="long">
+						"How to date a sexaddict?"
+					</div>
+					<div class="header" data-feeling="selvutvikling" data-size="short">"Gutter leker ikke med
+						barbie-dukker"</div>
+					<div class="header" data-feeling="hookup" data-size="long">
+						"Speilvendte situasioner"
+					</div>
+					<div class="header" data-feeling="selvutvikling" data-size="long">"Gutten, sminkeskrinet og
+						speilet"</div>
+					<div class="header" data-feeling="kjærlighet" data-size="long">"Æren blant tyver"
+					</div>
+					<div class="header" data-feeling="selvutvikling rasisme" data-size="long">"Blomst i en verden av
+						torner"
+					</div>
+					<div class="header" data-feeling="selvutvikling" data-size="long">"Håndflatens retning"</div>
+					<div class="header" data-feeling="hookup" data-size="short">
+						"Du tok det første steget"
+					</div>
+					<div class="header" data-feeling="kjærlighet" data-size="short">"Mislykket forsøk"
+					</div>
+					<div class="header" data-feeling="hookup" data-size="short">
+						"Pose og sekk"
+					</div>
+					<div class="header" data-feeling="rasisme" data-size="long">"Forbi folkemengden"</div>
+					<div class="header" data-feeling="selvutvikling" data-size="long">"Dansens sti"</div>
+					<div class="header" data-feeling="selvutvikling" data-size="short">"Til deg som er for stolt"</div>
+					<div class="header" data-feeling="hookup" data-size="short">
+						"Utstråling"
+					</div>
+					<div class="header" data-feeling="kjærlighet" data-size="short">"Sterke følelser"
+					</div>
+					<div class="header" data-feeling="rasisme" data-size="long">"Spiralen av rase"</div>
+
+
+				</div>
+
+
+
+
+
+
+
+
+
+
+
+
+		</div>
+
+		</section>
+
 
 
 		</div>
 
 		<div class="content" data-name="Contact">
-			<div class="form-box">
-				<div class="form-box__info">
-					<div class="form-box__title">Contact</div>
-					<div>
-						<input class="input" type="text" name="name" id="name" placeholder="name">
-						<input class="input" type="text" name="email" id="email" placeholder="email">
-					</div>
-				</div>
-				<div class="form-box__number">
-					<input class="input" type="text" name="phone number" id="number" placeholder="phone number">
-				</div>
-				<div class="form-box__comment">
-					<input class="input" type="text" name="comment" id="comment" placeholder="comment">
-					<button class="form-button">Send</button>
-				</div>
 
-			</div>
 		</div>
 
 	</main>
 
+
+	<footer>
+		<div class="footer__container">
+			<div></div>
+		</div>
+	</footer>
 
 
 
