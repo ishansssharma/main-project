@@ -8,6 +8,12 @@
 	flex-direction: column;
 }
 
+.form-header {
+	align-self: flex-start;
+	margin-bottom: var(--margin-bottom);
+	font-size: var(--font-size__large);
+}
+
 .form__container--firstcolumn {
 	flex-basis: 20%;
 
@@ -24,9 +30,27 @@
 }
 
 .form__container--thirdcolumn {
-	flex-basis: 60%;
+	flex-basis: 50%;
 
 	width: 100%;
+}
+
+.submit {
+	flex-basis: 10%;
+	align-self: flex-start;
+
+
+}
+
+.submit__button {
+	font-size: var(--font-size__small);
+	border: 0.2rem solid;
+	border-radius: var(--border-radius);
+	background-color: black;
+	width: 10rem;
+	height: 3rem;
+	color: var(--font-color);
+
 }
 
 .inputcontainer {
@@ -34,6 +58,7 @@
 	height: 50%;
 	border-radius: var(--border-radius);
 	padding: 1rem;
+	font-size: var(--font-size__small);
 }
 
 .nameandemail {
