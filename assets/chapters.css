@@ -1,0 +1,45 @@
+.category-container {
+	display: flex;
+	flex-direction: column;
+	width: 50rem;
+	height: 50rem;
+	gap: var(--margin-bottom);
+	margin-top: var(--margin-top);
+
+
+}
+
+
+.category-container__feeling {}
+
+.filter-button {
+	font-size: var(--font-size__smedium);
+	border: 0.1rem solid black;
+	margin-right: 1rem;
+	padding: 1rem;
+	border-radius: var(--border-radius);
+	background: var(--primary-color);
+	color: var(--font-color);
+}
+
+.filter-button:active {
+	transform: translate(2%);
+
+}
+
+
+
+.headers {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	margin-top: var(--margin-top);
+
+
+}
+
+
+
+.header {}
+
+.filter-button--active {}
