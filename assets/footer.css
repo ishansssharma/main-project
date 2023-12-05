@@ -1,6 +1,6 @@
 .footer-container {
 	width: 100vw;
-	height: 10rem;
+	height: 15rem;
 	margin-top: var(--margin-bottom);
 	background-color: black;
 	display: flex;
@@ -10,10 +10,51 @@
 
 .tothetop {
 	width: 15%;
-	height: 2rem;
+	height: 3rem;
 	justify-items: center;
-	border: 0.1rem solid white;
+	border: 0.1rem solid #fff;
+	border-radius: var(--border-radius);
 	color: var(--font-color);
 
 
+}
+
+.footer-input {
+	width: 20vw;
+	margin-top: 2rem;
+}
+
+.inputcontainer-footer {
+	background-color: #000;
+	border: #fff;
+	color: var(--font-color);
+}
+
+.input-title {
+	color: var(--font-color);
+	margin-top: 1rem;
+}
+
+.submit-footer {
+	color: var(--font-color);
+	padding: 0.1rem
+}
+
+.submit:active {
+	transform: translate(2%);
+}
+
+.message {
+	display: none;
+
+}
+
+.message--visible {
+	display: flex;
+	color: var(--font-color);
+	margin-left: 1rem;
+}
+
+.lastsection {
+	display: flex;
 }

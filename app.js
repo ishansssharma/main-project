@@ -1,10 +1,46 @@
+//Javascript for "Tatovert på Innsiden"
+
+//Variables for the Main buttons that switch between each page. 
 const mainButtons = document.querySelectorAll(".main-button");
 const pages = document.querySelectorAll(".content");
 const mainPage = document.querySelector(".main-site");
 
+//Variables for slideshow
+const slideshow = document.querySelector(".slideshow");
+const slides = slideshow.querySelectorAll(".slideshow-slide");
+const controls = slideshow.querySelectorAll(".slideshow__control-button");
+const counter = slideshow.querySelector(".slideshow__counter");
+const dots = slideshow.querySelectorAll(".slideshow__dot");
+let index = 0;
+const totalSlides = slides.length
+const lastIndex = slides.length;
+
+//Variables for the filterfunction that filters throught the chapters.
+const filterButtons = document.querySelectorAll(".filter-button");
+const headers = document.querySelectorAll(".header");
+const headerContainer = document.querySelector(".headers");
+let lastClickedFilterVia = null;
+let lastClickedFilterValue = null;
+
+//Variable for the Button in the footer that directs to the top
+const toTheTopButton = document.querySelector(".tothetop");
+
+//Variables for messages popping up after submitting form
+const submitButton = document.querySelector(".submit-footer");
+const popUpMessage = document.querySelector(".message");
+const emailInput = document.querySelector(".inputcontainer-footer");
+
+
+
+
+//Functions 
+
+
+//Switch between pages
 mainButtons.forEach(button => {
 	button.addEventListener("click", showPage)
 })
+
 
 function showPage(event) {
 	const button = event.currentTarget;
@@ -31,18 +67,9 @@ function showPage(event) {
 
 }
 
-const slideshow = document.querySelector(".slideshow");
-const slides = slideshow.querySelectorAll(".slideshow-slide");
-const controls = slideshow.querySelectorAll(".slideshow__control-button");
-const counter = slideshow.querySelector(".slideshow__counter");
-const dots = slideshow.querySelectorAll(".slideshow__dot");
 
-let index = 0;
+//Slideshow
 
-const totalSlides = slides.length
-const lastIndex = slides.length;
-
-console.log(totalSlides);
 const setIndex = (newIndex) => {
 	index = newIndex;
 }
@@ -105,12 +132,8 @@ dots.forEach(button => {
 	});
 });
 
-const filterButtons = document.querySelectorAll(".filter-button");
-const headers = document.querySelectorAll(".header");
-const headerContainer = document.querySelector(".header");
 
-let lastClickedFilterVia = null;
-let lastClickedFilterValue = null;
+//Filter for Chapters and Headers
 
 const filterTheList = (event) => {
 	const currentButton = event.currentTarget;
@@ -123,10 +146,12 @@ const filterTheList = (event) => {
 		currentButtonFilterValue = "*"
 	}
 
-	lastClickedFilterValue = currentButtonFilterVia;
+	lastClickedFilterVia = currentButtonFilterVia;
 	lastClickedFilterValue = currentButtonFilterValue;
 
-	const filteredItems = [...headers].filter(item => {
+
+
+	const filteredHeaders = [...headers].filter(item => {
 		if (lastClickedFilterValue === "*") {
 			return true;
 		} else {
@@ -134,7 +159,14 @@ const filterTheList = (event) => {
 		}
 	});
 
+
+
 	headerContainer.innerHTML = " ";
+
+	filteredHeaders.forEach(item => {
+		headerContainer.appendChild(item);
+	});
+
 
 	filterButtons.forEach(button => {
 		button.classList.remove("filter-button--active");
@@ -146,13 +178,14 @@ const filterTheList = (event) => {
 
 }
 
+
 filterButtons.forEach(filterButton => {
 	filterButton.addEventListener("click", filterTheList)
 });
 
 
 
-const toTheTopButton = document.querySelector(".tothetop");
+//Button directing to the top of the page
 
 toTheTopButton.addEventListener("click", () => {
 	window.scrollTo({
@@ -162,3 +195,19 @@ toTheTopButton.addEventListener("click", () => {
 
 	});
 })
+
+//Pop up Message for Submit Button in Footer 
+submitButton.addEventListener("click", () => {
+
+
+
+	popUpMessage.classList.add("message--visible");
+
+	setTimeout(() => {
+		popUpMessage.classList.remove("message--visible");
+	}, 1000);
+});
+
+function submitForm() => {
+
+}
