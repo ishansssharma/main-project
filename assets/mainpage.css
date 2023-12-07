@@ -38,7 +38,7 @@
 
 }
 
-@media (max-width: 1024px) and (min-width: 601px) {
+@media (max-width: 1024px) and (min-width: 701px) {
 	.main-container {
 		width: 40rem;
 		height: 30rem;
@@ -57,7 +57,7 @@
 	}
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
 	.main-container {
 		width: 25rem;
 		height: 30rem;
@@ -66,11 +66,11 @@
 
 	.image-container {
 		width: 25rem;
-		height: 10rem;
+		height: 15rem;
 	}
 
 	.image-image {
 		width: 25rem;
-		height: 10rem;
+		height: 15rem;
 	}
 }

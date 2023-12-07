@@ -57,7 +57,7 @@
 	flex-basis: 20%;
 }
 
-@media (max-width: 1024px) and (min-width: 601px) {
+@media (max-width: 1024px) and (min-width: 701px) {
 	.info-box {
 		width: 50rem;
 		height: 50rem;
@@ -80,10 +80,10 @@
 	}
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
 	.info-box {
 		width: 20rem;
-		height: 50rem;
+		height: 60rem;
 		display: flex;
 		flex-direction: column;
 
@@ -102,7 +102,8 @@
 
 	}
 
-	.info-box__info {
-		width: 20rem;
+	.paragraph {
+		margin-left: 0;
+
 	}
 }

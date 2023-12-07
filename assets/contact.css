@@ -74,3 +74,55 @@
 	display: flex;
 	font-size: var(--font-size__medium);
 }
+
+.alert-email {
+	display: none;
+}
+
+.alert-email--visible {
+	display: flex;
+}
+
+.alert-phone {
+	display: none;
+}
+
+.alert-phone--visible {
+	display: flex;
+}
+
+.alert-comment {
+	display: none;
+}
+
+.alert-comment--visible {
+	display: flex;
+}
+
+@media (max-width: 1024px) and (min-width: 701px) {
+	.form__container {
+		width: 40rem;
+		height: 30rem;
+	}
+}
+
+@media (max-width: 700px) {
+	.form__container {
+		width: 25rem;
+		height: 30rem;
+	}
+
+	.form__container--firstcolumn {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.inputcontainer {
+		width: 100%;
+		height: 10%;
+	}
+
+	.comment {
+		height: 10rem;
+	}
+}
