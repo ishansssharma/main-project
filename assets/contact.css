@@ -64,3 +64,13 @@
 .nameandemail {
 	width: 24rem;
 }
+
+.popup-message {
+
+	display: none;
+}
+
+.popup-message--visible {
+	display: flex;
+	font-size: var(--font-size__medium);
+}
