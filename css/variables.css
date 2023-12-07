@@ -5,5 +5,22 @@
 	--secondary-color: #B8885D;
 	--tertiary-color: #EBD6C3;
 
+	--footer-color: #000;
+
 	--font-color: #fff;
+	--font-color2: #000;
+
+
+	--font-size__small: 1rem;
+	--font-size__smedium: 1.1rem;
+	--font-size__smallmedium: 1.3rem;
+	--font-size__medium: 1.5rem;
+	--font-size__large: 2rem;
+	--font-size__extralarge: 2.5rem;
+
+
+	--border-radius: 1rem;
+
+	--margin-top: 5rem;
+	--margin-bottom: 2rem;
 }

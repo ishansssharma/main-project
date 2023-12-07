@@ -2,14 +2,21 @@
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
-	font-family: 'Anek Devanagari', sans-serif;
+	font-family: 'Roboto', sans-serif;
 
 }
 
 
 
 body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
 	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: #F8F8F8;
 }
 
 button {
