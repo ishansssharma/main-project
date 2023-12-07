@@ -2,10 +2,8 @@
 	display: flex;
 	flex-direction: column;
 	width: 30rem;
-	height: 50rem;
 	gap: var(--margin-bottom);
 	margin-top: var(--margin-top);
-
 
 }
 
@@ -42,13 +40,36 @@
 	flex-direction: column;
 	gap: 0.5rem;
 	margin-top: var(--margin-top);
-	height: 50rem;
+
 
 
 }
 
+.reset-button {
+	background: #882B0E;
+}
 
 
-.header:active {}
 
-.filter-button--active {}
+
+
+.filter-button--active {
+	background: black;
+	border-color: white;
+	color: white;
+}
+
+
+@media (max-width: 1024px) and (min-width: 601px) {
+	.category-container {
+		width: 20rem;
+
+
+	}
+}
+
+@media (max-width: 600px) {
+	.category-container {
+		width: 15rem;
+	}
+}
