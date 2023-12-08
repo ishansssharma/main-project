@@ -37,10 +37,8 @@ const middleInputField = document.querySelector(".phonenumber");
 const lastInputField = document.querySelector(".comment");
 const buttonForSubmitting = document.querySelector(".submit__button");
 const message = document.querySelector(".popup-message");
-const emailValue = inputEmail.value;
-const alertEmail = document.querySelector(".alert-email");
-const alertPhone = document.querySelector(".alert-phone");
-const alertcomment = document.querySelector(".alert-comment");
+const form = document.querySelector(".form__container");
+const alertMessage = document.querySelector(".alert-comment");
 
 
 
@@ -100,9 +98,9 @@ const increaseIndex = () => {
 	if (index < lastIndex) {
 		index = index + 1;
 	} else {
-		index = 1;
+		index = 0;
 	}
-}
+};
 
 const renderSlideClass = () => {
 	slides.forEach(slide => {
@@ -112,7 +110,7 @@ const renderSlideClass = () => {
 }
 
 const renderCounter = () => {
-	counter.textContent = `${index} of ${totalSlides}`;
+	counter.textContent = `${index + 1} of ${totalSlides}`;
 }
 
 const switchSlide = (event) => {
@@ -225,18 +223,27 @@ submitButton.addEventListener("click", () => {
 
 //Popupmessage for submitting contact form. 
 buttonForSubmitting.addEventListener("click", () => {
+	if (form.checkValidity()) {
+		inputName.value = "";
+		inputEmail.value = "";
+		middleInputField.value = "";
+		lastInputField.value = "";
 
-	inputName.value = "";
-	inputEmail.value = "";
-	middleInputField.value = "";
-	lastInputField.value = "";
+		message.classList.add("popup-message--visible");
 
-	message.classList.add("popup-message--visible");
+		setTimeout(() => {
+			message.classList.remove("popup-message--visible")
+		}, 2000);
+	} else {
+		alertMessage.classList.add("alert-comment--visible");
 
-	setTimeout(() => {
-		message.classList.remove("popup-message--visible")
-	}, 2000);
-})
+		setTimeout(() => {
+			alertMessage.classList.remove("alert-comment--visible")
+		}, 2000);
+
+
+	}
+});
 
 
 
