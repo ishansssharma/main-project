@@ -16,6 +16,7 @@ Contributors
 
 Teachers: Alejandro Rojas / Mohammed Reza Dianat
 
-### Credits
 
 ### Related links 
+* Netlify: 
+* GitHub: [TatovertpåInnsiden](https://github.com/ishansssharma/main-project)
