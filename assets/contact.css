@@ -75,21 +75,6 @@
 	font-size: var(--font-size__medium);
 }
 
-.alert-email {
-	display: none;
-}
-
-.alert-email--visible {
-	display: flex;
-}
-
-.alert-phone {
-	display: none;
-}
-
-.alert-phone--visible {
-	display: flex;
-}
 
 .alert-comment {
 	display: none;
