@@ -23,6 +23,7 @@
 </head>
 
 <body>
+	<!--Top container with all main buttons-->
 	<section class="top-container">
 		<h1 class="title">Tatovert på innsiden</h1>
 		<div class="main-buttons">
@@ -38,6 +39,7 @@
 
 
 	<main>
+		<!--Container with an image and some introducing words-->
 		<div class="content content--visible main-parent" data-name="Home">
 			<div class="main-container">
 				<div class="mini-title">En liten gutt kastet ut i en stor verden</div>
@@ -53,7 +55,7 @@
 					<img class="image-image" src="Images/Frontpicture.jpg" alt="">
 				</div>
 			</div>
-
+			<!--Slideshow-->
 			<section class="slideshow">
 				<div class="slideshow-slides">
 
@@ -139,7 +141,7 @@
 
 
 			</section>
-
+			<!--Container showcasing purpose of the book-->
 			<section class="purposecontainer">
 				<div class="purpose__img">
 					<figure>
@@ -161,9 +163,7 @@
 						Denne boken hevder ikke å være løsningen på dette, men heller en lettelse til ungdommer som
 						føler seg alene i spørsmålsinfernoet.
 
-						<button>
 
-						</button>
 
 					</div>
 
@@ -173,7 +173,9 @@
 			</section>
 		</div>
 
+		<!--Info about the author-->
 		<div class="content" data-name="Ishan-Sharma">
+
 			<div class="info-box">
 				<div class="info-box__picturecontainer">
 					<img class="info-box__picture" src="Images/Writerpicture.jpg" alt="">
@@ -215,7 +217,7 @@
 			</div>
 
 		</div>
-
+		<!--Chapters and concept-->
 		<div class="content" data-name="Chapters-and-Concept">
 
 
@@ -323,18 +325,18 @@
 
 
 
-
+		<!--Contact-form-->
 		<div class="content" data-name="Contact">
 
-			<div class="form__container">
+			<form class="form__container">
 				<h2 class="form-header">Contact</h2>
 				<div class="form__container--firstcolumn">
 					<input class="nameandemail name inputcontainer" placeholder="Name" type="text">
-					<input class="nameandemail email inputcontainer" placeholder="Email" type="text">
+					<input class="nameandemail email inputcontainer" placeholder="Email" type="email" required>
 				</div>
 
 				<div class="form__container--secondcolumn">
-					<input class="phonenumber inputcontainer" placeholder="Phone Number" type="text">
+					<input class="phonenumber inputcontainer" placeholder="Phone Number" type="tel">
 				</div>
 
 				<div class="form__container--thirdcolumn">
@@ -348,38 +350,32 @@
 
 					<div class="popup-message">
 						We appreciate your comment!
-						<div class="alert-email">
-							Please enter your Email.
-						</div>
-						<div class="alert-phone">
-							Please enter your phonenumber.
-						</div>
+					</div>
 
-						<div class="alert-comment">
-							Please enter your comment.
-						</div>
+					<div class="alert-comment">
+						Please enter your Email!
 					</div>
 				</div>
 
 
-			</div>
+			</form>
 
 		</div>
 
 	</main>
 
-
+	<!--Footer-->
 	<footer>
 		<div class="footer-container">
 			<button class="tothetop">To the top</button>
-			<div class="footer-input">
+			<form class="footer-input">
 				<div class="input-title"> Subscribe to our monthly news</div>
-				<input class="inputcontainer inputcontainer-footer" type="text" placeholder="Email">
+				<input class="inputcontainer inputcontainer-footer" type="email" placeholder="Email" required>
 				<div class="lastsection">
 					<button class="submit-footer">Submit</button>
 					<div class="message">Thank you!</div>
 				</div>
-			</div>
+			</form>
 
 		</div>
 	</footer>
